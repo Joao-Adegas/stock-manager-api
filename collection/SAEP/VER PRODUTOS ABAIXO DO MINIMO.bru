@@ -1,0 +1,15 @@
+meta {
+  name: VER PRODUTOS ABAIXO DO MINIMO
+  type: http
+  seq: 4
+}
+
+get {
+  url: http://localhost:8000/product/baixo-minimo/
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,32 @@
+meta {
+  name: CREATE PRODUCT
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8000/product/
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "product":"smartphone",
+    "voltage":"12V",
+    "dimension":"12",
+    "screen_resolutions":"1920x744",
+    "storage_capacity":"2RAM",
+    "connectivity":[
+      "Bluetooth",
+      "Wi-fi",
+      "2.4g"
+    ],
+    "minimum_stock":1
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

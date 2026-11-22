@@ -1,0 +1,23 @@
+meta {
+  name: Movimantation
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8000/movimentation/
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "type":"output",
+    "product":1
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

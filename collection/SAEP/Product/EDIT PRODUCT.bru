@@ -1,0 +1,22 @@
+meta {
+  name: EDIT PRODUCT
+  type: http
+  seq: 2
+}
+
+patch {
+  url: http://localhost:8000/product/1/
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "minimum_stock":8
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

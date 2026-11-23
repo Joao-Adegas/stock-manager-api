@@ -25,7 +25,7 @@ A local electronics retailer struggles with stock management because there is no
 
 ## Data model
 
-![Database diagram](/diagram.svg)
+![Database diagram](Diagram.png)
 
 **User:** id, username, password, email, first_name, last_name, last_login, is_superuser, is_staff, is_active, date_joined
 
